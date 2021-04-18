@@ -1,11 +1,11 @@
-let m1;
 
+let brain;
 
 function setup()
 {
   createCanvas(500,500);
-  m1 = new matrix(2,2);
-  m1.randomInitialize();
+  brain  = new neuralNet(2,2,1);
+  brain.feedForward([0,1]);
 }
 
 function draw()

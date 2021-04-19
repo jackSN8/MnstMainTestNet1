@@ -11,9 +11,9 @@ class Matrix {
   }
 
   static fromArray(arr) {
-    return new Matrix(arr.length, 1).map((e, i) => arr[i]);
+    return new Matrix(arr.length,1).map((e, i) => arr[i]);
   }
-  
+
 
   static subtract(a, b) {
     if (a.rows !== b.rows || a.cols !== b.cols) {
